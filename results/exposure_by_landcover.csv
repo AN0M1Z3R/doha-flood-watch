@@ -1,0 +1,7 @@
+land_cover,class_area_km2,wet_ground_km2,standing_water_km2,wet_ground_pct
+Built-up,236.459,42.247,0.01,17.867
+Bare / sparse,117.38,14.656,0.062,12.486
+Cropland,1.562,0.191,0.007,12.212
+Grassland,2.583,0.183,0.0,7.078
+Tree cover,2.087,0.097,0.0,4.658
+Shrubland,1.018,0.081,0.002,7.934

@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+.env
+*.aux.xml
+
+presentation/node_modules/
+presentation/dist/
+presentation/.slidev/
+docs/Doha Flood Watch*.pdf

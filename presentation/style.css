@@ -1,0 +1,112 @@
+/* Doha Flood Watch deck theme: palette and type scale shared by every slide */
+:root {
+  --navy: #0F2233;
+  --sand: #F6F4EF;
+  --card: #FFFFFF;
+  --line: #E2DED4;
+  --ink2: #3D4B5C;
+  --muted: #6A7684;
+  --blue: #1F5FD6;
+  --blue-soft: #7FA8FF;
+  --maroon: #8A1538;
+  --maroon-dark: #6E0F2C;
+}
+
+.slidev-layout {
+  background: var(--sand);
+  color: var(--navy);
+  font-family: 'IBM Plex Sans', Arial, sans-serif;
+  padding: 2.4rem 3rem 2.6rem;
+}
+
+.slidev-layout h1,
+.slidev-layout h2 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.1;
+}
+.slidev-layout h1 { font-size: 2.3rem; margin-bottom: 1.1rem; }
+.slidev-layout h3 { font-size: 1.15rem; font-weight: 600; margin: 0; line-height: 1.25; }
+.slidev-layout p, .slidev-layout li { font-size: 1.05rem; line-height: 1.45; }
+
+/* small uppercase label above each title */
+.eyebrow {
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--maroon);
+  margin-bottom: 0.35rem !important;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1.2rem 1.35rem;
+}
+.card p { color: var(--ink2); font-size: 0.98rem; margin: 0.35rem 0 0; }
+
+.card .big, .big {
+  font-family: 'IBM Plex Sans', Arial, sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--blue);
+  line-height: 1;
+  margin: 0;
+}
+
+.icon { color: var(--blue); font-size: 1.5rem; }
+
+.figure {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(15, 34, 51, 0.08);
+}
+
+.footer {
+  position: absolute;
+  left: 3rem;
+  right: 3rem;
+  bottom: 1rem;
+  font-size: 0.62rem;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+}
+
+table { font-size: 0.8rem; }
+th { background: var(--navy); color: var(--sand); font-weight: 600; }
+td, th { padding: 0.45rem 0.7rem !important; border-color: var(--line) !important; }
+tr:nth-child(even) td { background: #EFECE4; }
+tr:nth-child(odd) td { background: #fff; }
+
+/* dark slides */
+.dark { background: var(--navy) !important; color: var(--sand) !important; }
+.dark h1, .dark h2, .dark h3 { color: var(--sand) !important; }
+.dark .eyebrow { color: var(--blue-soft); }
+.dark p, .dark li { color: #C9D6E3; }
+.dark .footer { color: #8FA3B8; }
+
+/* maroon statement slide */
+.maroon { background: var(--maroon) !important; color: #FBF3F5 !important; }
+.maroon h1, .maroon h3 { color: #FBF3F5 !important; }
+.maroon .eyebrow { color: #F2C6D2; }
+.maroon .card { background: var(--maroon-dark); border: none; }
+.maroon .card li { color: #F2DCE2; }
+.maroon .footer { color: #F2C6D2; }
+
+/* cover */
+.cover-scrim {
+  position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(15,34,51,0.92) 0%, rgba(15,34,51,0.72) 55%, rgba(15,34,51,0.25) 100%);
+}
+.accent-bar { position: absolute; left: 0; top: 0; bottom: 0; width: 10px; background: var(--maroon); }
+
+/* story timeline */
+.step-dot {
+  width: 2.2rem; height: 2.2rem; border-radius: 999px;
+  background: var(--blue); color: #fff; font-weight: 700;
+  display: flex; align-items: center; justify-content: center; font-size: 0.95rem;
+}
